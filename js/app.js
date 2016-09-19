@@ -18,6 +18,7 @@ var catBox = document.createElement('div');
 catBox.id = "meow";
 catBox.innerHTML = "Overcome its fear of cucumbers!";
 bigBox.appendChild(catBox);
+
 /*Helpful Hints:
 document.createElement creates an Element node
 element.id sets or returns the identifier of an element
@@ -48,8 +49,14 @@ element.className is a property that sets or returns the class name of an elemen
 
 var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visit Aoshima (aka Japan's Cat Island)", "Exhaust my entire 9 lives", "Pass DevLeague's coding challenge", "Become the next internet sensation", "eat tacos", "drinks gin", "read books", "sleep", "Drink coffee", "eat chips"];
 
+for(var i = 0; i<getBuckets.length; i++){
+  console.log(getBuckets[i]);
 
-
+  var bucketList = document.createElement('li');
+  bucketList.className = "daList";
+  bucketList.innerHTML = getBuckets[i];
+  buckets.appendChild(bucketList);
+}
 //Exerise 4
 /*Our motivated Tacocat has been hard at work on its bucket list.  Update the current list to the following:
 "Become more famous than that overrated fraud Garfield" => "I'm coming for you Felix!"
@@ -61,7 +68,6 @@ Declare a variable named changeList and assign it to the getElementsByTagName me
 
 
 
-
 //Exercise 5
 /*Declare a variable named changeListAgain and assign it to the getElementsByClassName method. Update the current list to the following:
 
@@ -69,6 +75,3 @@ Declare a variable named changeList and assign it to the getElementsByTagName me
 
 
 };
-
-
-
